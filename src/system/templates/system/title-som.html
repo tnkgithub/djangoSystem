@@ -26,11 +26,7 @@
 
                 element = document.getElementById(id);
 
-                if(element.style.borderWidth == "3px"){
-                    element.style.borderWidth = "0px";
-                }else{
-                    element.style.border = "solid 3px black";
-                }
+                element.style.outline = "solid 5px #27acd9";
 
                 element.scrollIntoView({
                     behavior: "smooth",
@@ -53,7 +49,7 @@
                         <figcaption>{% get_value image_title i %}</figcaption>
                     </figure>
                 {% else %}
-                    <div></div>
+                    <p>　　</p>
                 {% endif %}
             {% endfor %}
         </div>

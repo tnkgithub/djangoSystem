@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-lhkl(v-^tern=z)xy%-9ml@)hgx9ug)=z0d1h36lll7)y9rh!(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com']
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'system',
-    'import_export',
 ]
 
 MIDDLEWARE = [
@@ -119,9 +118,10 @@ DEFAULT_CHARSET = "utf-8"
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+import os
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
-
+#STATIC_ROOT = '/home/FUNb1019035/myenv/archivesystem/static'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
